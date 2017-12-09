@@ -7,10 +7,16 @@
 //
 
 #include <stdio.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 #include <cassert>
 #include <string.h>
 #include <math.h>
+
+const char* TREE_FILES = "../resources/save.txt";
+const char* TREE_FILES1 = "../resources/save1.txt";
+const long int LI = 1000000000;
+typedef char* TYPE_TREE;
+#include "../resources/tree.h"
 
 
 /*========================
@@ -22,107 +28,214 @@ int POS = 0;
 
 
 
-int GetG0 (const char* pSTR); //ГЛАВНЫЙ БОСС
+char* GetG0 (const char* pSTR); //ГЛАВНЫЙ БОСС
 
-int GetE (void); //НАЧАЛЬНИК ПО СЛОЖЕНИЮ И ВЫЧЕТАНИЮ
+char* GetE (void); //НАЧАЛЬНИК ПО СЛОЖЕНИЮ И ВЫЧЕТАНИЮ
 
-int GetT (void); //ЗАМ ПО УМНОЖЕНИЮ И ДЕЛЕНИЮ
+char* GetT (void); //ЗАМ ПО УМНОЖЕНИЮ И ДЕЛЕНИЮ
 
-int GetP (void);//ИНСПЕКТОР ГАДЖЕТ ПО СКОБКАМ
+char* GetP (void);//ИНСПЕКТОР ГАДЖЕТ ПО СКОБКАМ
 
-int GetN (void);//КОПАТЕЛЬ-СОБИРАЕТЛЬ ЦИФР В ЧИСЛА
+char* GetN (void);//КОПАТЕЛЬ-СОБИРАЕТЛЬ ЦИФР В ЧИСЛА
+
+
+int DtoS (char* str, double var);
 
 
 int main() {
-    printf("%i", GetG0("5*(10/2)-((((1))))"));
-    printf("\n");
+    
+    printf("%s\n", GetG0("5/5/5*5-5*(200-100)"));
     return 0;
 }
 
 
 
-int GetG0 (const char* pSTR) {
+char* GetG0 (const char* pSTR) {
     
     STR = pSTR;
-    pSTR = 0;
+    //pSTR = "";
     
-    int val = GetE();
-    assert(STR[POS] == 0);
+    char* val_s = GetE();
     
-    return val;
+    assert(STR[POS] == '\0');
+    
+    return val_s;
 }
 
 
 
-int GetE (void) {
-    int val = GetT();
+char* GetE (void) {
+    char* val_s = GetT();
+    
+    double val_d1 = strtod(val_s, NULL);
+    double val_d2;
     
     while (STR [POS] == '+' || STR [POS] == '-') {
-        
-        int op = STR [POS];
+        char op = STR [POS];
         ++POS;
         
-        int val2 = GetT();
-        
+        char* val_s2 = GetT();
+        val_d2 = strtod(val_s2, NULL);
+        /*
+        printf("%s %c %s\n", val_s, op, val_s2);
+        printf("%lg %c %lg\n",val_d1, op, val_d2);
+        printf("===\n");
+         */
         if (op == '+')
-            val += val2;
+            val_d1 += val_d2;
         else
-            val -= val2;
+            val_d1 -= val_d2;
+        DtoS(val_s, val_d1);
     }
     
     
-    return val;
+    return val_s;
 }
 
 
 
-int GetT(void) {
+char* GetT(void) {
     
-    int val = GetP();
+    char* val_s = GetP();
+    
+    double val_d1 = strtod(val_s, NULL);
+    double val_d2;
     
     while (STR [POS] == '*' || STR [POS] == '/') {
         
-        int op = STR [POS];
+        char op = STR [POS];
         ++POS;
         
-        int val2 = GetP();
-        
+        char* val_s2 = GetP();
+        val_d2 = strtod(val_s2, NULL);
         if (op == '*')
-            val *= val2;
+            val_d1 *= val_d2;
         else
-            val /= val2;
+            val_d1 /= val_d2;
+        DtoS(val_s, val_d1);
     }
     
     
-    return val;
-    
-    return 0;
+    return val_s;
 }
 
 
 
-int GetP (void) {
+char* GetP (void) {
     if (STR [POS] =='(') {
         ++POS;
         
-        int val = GetE();
+        char* val_s = GetE();
         
         assert(STR [POS] == ')');
         ++POS;
         
-        return val;
+        return val_s;
     } else
         return GetN();
 }
 
 
 
-int GetN (void) {
-    int val = 0;
-    while ('0' <= STR [POS] && STR [POS] <='9') {
-        val = val * 10 + STR [POS] - '0';
+char* GetN (void) {
+    char* val_s = new char [CELL_SIZE_DATA];
+    char str [CELL_SIZE_DATA] = "";
+    int i = 0;
+    
+    if (((STR [POS] == '+') || (STR [POS] == '-')) && ('0' <= STR [POS + 1] && STR [POS + 1] <= '9')) {
+        str [i] = STR [POS];
         ++POS;
+        ++i;
     }
-    return val;
+    
+    while ('0' <= STR [POS] && STR [POS] <= '9') {
+        str [i] = STR [POS];
+        ++POS;
+        ++i;
+    }
+    
+    if (STR [POS] == '.') {
+        while ('0' <= STR [POS] && STR [POS] <= '9') {
+            str [i] = STR [POS];
+            ++i;
+            ++POS;
+        }
+        
+    }
+    str [i] = '\0';
+    
+    memcpy(val_s, str, strlen(str));
+    return val_s;
 }
 
+
+
+int DtoS (char* str, double var) {
+    
+    int i = 0;
+    assert(str);
+    str [0] = '\0';
+    
+    if (var < 0) {
+        var = (-1) * var;
+        str [i] = '-';
+        ++i;
+    }
+    
+    long int maxd = 1;
+    long int maxp = 1;
+    long int j = 0;
+    long int pov = var;
+    long int div = var * LI - pov * LI;
+    long int longdiv = LI;
+    
+    
+    
+    while((j == 0) && (div > 0))
+    {
+        div = div / 10;
+        j = div % 10;
+        longdiv = longdiv / 10;
+    }
+    
+    longdiv = longdiv / 10;
+    
+    while (maxp <= pov) maxp = maxp * 10;
+    maxp = maxp / 10;
+    
+    while (maxd <= div) maxd = maxd * 10;
+    maxd = maxd / 10;
+    
+    while (maxp > 0) {
+        str [i] = pov / maxp + '0';
+        if (pov > 0)
+            pov = pov - (pov / maxp) * maxp;
+        maxp = maxp / 10;
+        ++i;
+    }
+    if (maxd > 0) {
+        str [i] = '.';
+        ++i;
+        
+        while (longdiv != maxd) {
+            str [i] = '0';
+            ++i;
+            longdiv = longdiv / 10;
+        }
+        
+        while (div > 0) {
+            str [i] = div / maxd + '0';
+            div = div - (div / maxd) * maxd;
+            maxd = maxd / 10;
+            ++i;
+        }
+    }
+    if (i == 0) {
+        str [i] = '0';
+        ++i;
+    }
+    str [i] = '\0';
+    
+    return 0;
+    
+}
