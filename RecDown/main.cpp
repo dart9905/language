@@ -39,6 +39,12 @@ char* GetP (void);//ИНСПЕКТОР ГАДЖЕТ ПО СКОБКАМ
 char* GetN (void);//КОПАТЕЛЬ-СОБИРАЕТЛЬ ЦИФР В ЧИСЛА
 
 
+char* GetF1(void);//ОПРЕДЕЛИТЬ ДОП ФУНКЦИЙ
+
+
+char* GetF1(char* str_fun, char* val_s);//ДОП ФУНКЦИИ
+
+
 int DtoS (char* str, double var);
 
 
@@ -57,6 +63,7 @@ char* GetG0 (const char* pSTR) {
     
     char* val_s = GetE();
     
+    assert(val_s);
     assert(STR[POS] == '\0');
     
     return val_s;
@@ -66,6 +73,7 @@ char* GetG0 (const char* pSTR) {
 
 char* GetE (void) {
     char* val_s = GetT();
+    assert(val_s);
     
     double val_d1 = strtod(val_s, NULL);
     double val_d2;
@@ -75,12 +83,9 @@ char* GetE (void) {
         ++POS;
         
         char* val_s2 = GetT();
+        assert(val_s2);
         val_d2 = strtod(val_s2, NULL);
-        /*
-        printf("%s %c %s\n", val_s, op, val_s2);
-        printf("%lg %c %lg\n",val_d1, op, val_d2);
-        printf("===\n");
-         */
+        
         if (op == '+')
             val_d1 += val_d2;
         else
@@ -97,6 +102,7 @@ char* GetE (void) {
 char* GetT(void) {
     
     char* val_s = GetP();
+    assert(val_s);
     
     double val_d1 = strtod(val_s, NULL);
     double val_d2;
@@ -107,11 +113,14 @@ char* GetT(void) {
         ++POS;
         
         char* val_s2 = GetP();
+        assert(val_s2);
         val_d2 = strtod(val_s2, NULL);
+        
         if (op == '*')
             val_d1 *= val_d2;
         else
             val_d1 /= val_d2;
+        
         DtoS(val_s, val_d1);
     }
     
@@ -132,7 +141,23 @@ char* GetP (void) {
         
         return val_s;
     } else
-        return GetN();
+        if ((('a' <= STR [POS]) && (STR [POS] <= 'z')) || (('A' <= STR [POS]) && (STR [POS] <= 'Z'))) {
+            
+            char* str_fun = GetF1();
+            
+            char* val_s = GetE();
+            assert(STR [POS] == ')');
+            
+            ++POS;
+            
+            val_s = GetF2(str_fun, val_s);
+            
+            delete str_fun;
+            
+            return val_s;
+        } else
+            return GetN();
+    return NULL;
 }
 
 
@@ -166,6 +191,17 @@ char* GetN (void) {
     
     memcpy(val_s, str, strlen(str));
     return val_s;
+}
+
+
+
+char* GetF1(void) {
+    
+}
+
+
+char* GetF1(char* str_fun, char* val_s) {
+    
 }
 
 
