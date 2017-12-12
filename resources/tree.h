@@ -436,7 +436,7 @@ int TreeDump (Tree_t* Tree, Cell_t* cell) {
     fprintf(file_dump, "}");
     fclose(file_dump);
     
-    system("open -a /Applications/Graphviz.app '/Users/macbook/Documents/GitHub/Differentiator/Differentiator/dump_tree.gv'");
+    system("open -a /Applications/Graphviz.app '/Users/macbook/Documents/GitHub/language/Language/dump_tree.gv'");
     
     return 0;
 }

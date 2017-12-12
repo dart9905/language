@@ -29,6 +29,8 @@ Cell_t* GetE (Tree_t* Tree, const char* pSTR, int* pPOS); //НАЧАЛЬНИК �
 
 Cell_t* GetT (Tree_t* Tree, const char* pSTR, int* pPOS); //ЗАМ ПО УМНОЖЕНИЮ И ДЕЛЕНИЮ
 
+Cell_t* GetS (Tree_t* Tree, const char* pSTR, int* pPOS); //БРИГАДИР ПО СТЕПЕНЯМ
+
 Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS);//ИНСПЕКТОР ГАДЖЕТ ПО СКОБКАМ
 
 Cell_t* GetN (Tree_t* Tree, const char* pSTR, int* pPOS);//КОПАТЕЛЬ-СОБИРАЕТЛЬ ЦИФР В ЧИСЛА
@@ -52,9 +54,11 @@ int main() {
     char* my_buffer = ReadFiles (TREE_FILES , &number_of_char);
     
     Tree->cell = GetG0(Tree, my_buffer);
+    //Tree->cell->nextl->prev = Tree->cell;
     Tree->position_first_cell = Tree->cell;
     TreeDump(Tree, Tree->cell);
-    
+    //assert(0);
+    TreeDestructor(Tree);
     
     return 0;
 }
@@ -63,14 +67,15 @@ int main() {
 
 Cell_t* GetG0 (Tree_t* Tree, const char* pSTR) {
     
-    int* pPOS;
-    *pPOS = 0;
+    int POS;
+    POS = 0;
     //pSTR = "";
     
-    Cell_t* cell_new = GetE(Tree, pSTR, pPOS);
+    Cell_t* cell_new = GetE(Tree, pSTR, &POS);
     
     assert(cell_new);
-    assert(pSTR[*pPOS] == '\0');
+    //assert(0);
+    assert(pSTR[POS] == '\0');
     
     return cell_new;
 }
@@ -81,12 +86,43 @@ Cell_t* GetE (Tree_t* Tree, const char* pSTR, int* pPOS) {
     Cell_t* cell_new = GetT(Tree, pSTR, pPOS);
     Cell_t* cell_new2 = NULL;
     Cell_t* cell_new3 = cell_new;
-    char op [1] = "";
+    char* op = new char [2];
     
     assert(cell_new);
     
-    while (pSTR [*pPOS] == '+' || pSTR [*pPOS] == '-') {
+    if (pSTR [*pPOS] == '+' || pSTR [*pPOS] == '-') {
         op [0] = pSTR [*pPOS];
+        op [1] = '\0';
+        ++*pPOS;
+        
+        cell_new2 = GetE(Tree, pSTR, pPOS);
+        assert(cell_new2);
+        
+        
+        cell_new3 = CellNew (Tree);
+        cell_new3->data = op;
+        cell_new3->nextl = cell_new;
+        cell_new3->nextr = cell_new2;
+        cell_new3->nextl->prev = cell_new3;
+        cell_new3->nextr->prev = cell_new3;
+        
+    }
+    return cell_new3;
+}
+
+
+
+Cell_t* GetT(Tree_t* Tree, const char* pSTR, int* pPOS) {
+    Cell_t* cell_new = GetS(Tree, pSTR, pPOS);
+    Cell_t* cell_new2 = NULL;
+    Cell_t* cell_new3 = cell_new;
+    char* op = new char [2];
+    
+    assert(cell_new);
+    
+    if (pSTR [*pPOS] == '*' || pSTR [*pPOS] == '/') {
+        op [0] = pSTR [*pPOS];
+        op [1] = '\0';
         ++*pPOS;
         
         cell_new2 = GetT(Tree, pSTR, pPOS);
@@ -102,25 +138,25 @@ Cell_t* GetE (Tree_t* Tree, const char* pSTR, int* pPOS) {
         
     }
     
-    
     return cell_new3;
 }
 
 
 
-Cell_t* GetT(Tree_t* Tree, const char* pSTR, int* pPOS) {
+Cell_t* GetS (Tree_t* Tree, const char* pSTR, int* pPOS) {
     Cell_t* cell_new = GetP(Tree, pSTR, pPOS);
     Cell_t* cell_new2 = NULL;
     Cell_t* cell_new3 = cell_new;
-    char op [1] = "";
+    char* op = new char [2];
     
     assert(cell_new);
     
-    while (pSTR [*pPOS] == '*' || pSTR [*pPOS] == '/') {
+    if (pSTR [*pPOS] == '^') {
         op [0] = pSTR [*pPOS];
+        op [1] = '\0';
         ++*pPOS;
         
-        cell_new2 = GetP(Tree, pSTR, pPOS);
+        cell_new2 = GetS(Tree, pSTR, pPOS);
         assert(cell_new2);
         
         
@@ -133,8 +169,8 @@ Cell_t* GetT(Tree_t* Tree, const char* pSTR, int* pPOS) {
         
     }
     
-    
     return cell_new3;
+    
 }
 
 
@@ -142,6 +178,7 @@ Cell_t* GetT(Tree_t* Tree, const char* pSTR, int* pPOS) {
 
 Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
     if (pSTR [*pPOS] =='(') {
+        
         ++*pPOS;
         
         Cell_t* cell_new = GetE(Tree, pSTR, pPOS);
@@ -156,21 +193,32 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
             Cell_t* cell_new = GetF1(Tree, pSTR, pPOS);
             assert(cell_new);
             
-            assert(pSTR [*pPOS] == '(');
+            if (pSTR [*pPOS] == '(') {
+                
+                ++*pPOS;
+                
+                cell_new->nextl = GetE(Tree, pSTR, pPOS);
+                
+                if (pSTR [*pPOS] == ',') {
+                    ++*pPOS;
+                    cell_new->nextr = GetE(Tree, pSTR, pPOS);
+                    cell_new->nextr->prev = cell_new;
+                }
+                
+                assert(pSTR [*pPOS] == ')');
+                ++*pPOS;
+                
+                assert(cell_new->nextl);
+                
+                cell_new->nextl->prev = cell_new;
+                
+            }
             
-            //assert(0);
-            cell_new->nextl = GetP(Tree, pSTR, pPOS);
-            
-            assert(cell_new->nextl);
-            cell_new = cell_new->nextl->prev;
-            
-            ++*pPOS;
-            
-            //val_s = GetF2(Tree, pSTR, pPOS, str_fun, val_s);
             
             return cell_new;
         } else
             return GetN(Tree, pSTR, pPOS);
+    printf("NULL\n");
     return NULL;
 }
 
