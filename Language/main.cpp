@@ -23,24 +23,23 @@ typedef char* TYPE_TREE;
 
 
 
-char* GetG0 (Tree_t* Tree, const char* pSTR); //ГЛАВНЫЙ БОСС
+Cell_t* GetG0 (Tree_t* Tree, const char* pSTR); //ГЛАВНЫЙ БОСС
 
-char* GetE (Tree_t* Tree, const char* pSTR, int* pPOS); //НАЧАЛЬНИК ПО СЛОЖЕНИЮ И ВЫЧЕТАНИЮ
+Cell_t* GetE (Tree_t* Tree, const char* pSTR, int* pPOS); //НАЧАЛЬНИК ПО СЛОЖЕНИЮ И ВЫЧЕТАНИЮ
 
-char* GetT (Tree_t* Tree, const char* pSTR, int* pPOS); //ЗАМ ПО УМНОЖЕНИЮ И ДЕЛЕНИЮ
+Cell_t* GetT (Tree_t* Tree, const char* pSTR, int* pPOS); //ЗАМ ПО УМНОЖЕНИЮ И ДЕЛЕНИЮ
 
-char* GetP (Tree_t* Tree, const char* pSTR, int* pPOS);//ИНСПЕКТОР ГАДЖЕТ ПО СКОБКАМ
+Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS);//ИНСПЕКТОР ГАДЖЕТ ПО СКОБКАМ
 
-char* GetN (Tree_t* Tree, const char* pSTR, int* pPOS);//КОПАТЕЛЬ-СОБИРАЕТЛЬ ЦИФР В ЧИСЛА
+Cell_t* GetN (Tree_t* Tree, const char* pSTR, int* pPOS);//КОПАТЕЛЬ-СОБИРАЕТЛЬ ЦИФР В ЧИСЛА
 
-
-char* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS);//ОПРЕДЕЛИТЬ ДОП ФУНКЦИЙ
-
+Cell_t* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS);//ОПРЕДЕЛИТЬ ДОП ФУНКЦИЙ
 
 char* GetF2(Tree_t* Tree, const char* pSTR, int* pPOS, char* str_fun, char* val_s);//ДОП ФУНКЦИИ
 
-
 int DtoS (char* str, double var);
+
+
 
 
 int main() {
@@ -52,7 +51,9 @@ int main() {
     long int number_of_char = 0;
     char* my_buffer = ReadFiles (TREE_FILES , &number_of_char);
     
-    printf("%s\n", GetG0(Tree, my_buffer));
+    Tree->cell = GetG0(Tree, my_buffer);
+    Tree->position_first_cell = Tree->cell;
+    TreeDump(Tree, Tree->cell);
     
     
     return 0;
@@ -60,108 +61,114 @@ int main() {
 
 
 
-char* GetG0 (Tree_t* Tree, const char* pSTR) {
+Cell_t* GetG0 (Tree_t* Tree, const char* pSTR) {
     
     int* pPOS;
     *pPOS = 0;
     //pSTR = "";
     
-    char* val_s = GetE(Tree, pSTR, pPOS);
+    Cell_t* cell_new = GetE(Tree, pSTR, pPOS);
     
-    assert(val_s);
+    assert(cell_new);
     assert(pSTR[*pPOS] == '\0');
     
-    return val_s;
+    return cell_new;
 }
 
 
 
-char* GetE (Tree_t* Tree, const char* pSTR, int* pPOS) {
-    char* val_s = GetT(Tree, pSTR, pPOS);
-    assert(val_s);
+Cell_t* GetE (Tree_t* Tree, const char* pSTR, int* pPOS) {
+    Cell_t* cell_new = GetT(Tree, pSTR, pPOS);
+    Cell_t* cell_new2 = NULL;
+    Cell_t* cell_new3 = cell_new;
+    char op [1] = "";
     
-    double val_d1 = strtod(val_s, NULL);
-    double val_d2;
+    assert(cell_new);
     
     while (pSTR [*pPOS] == '+' || pSTR [*pPOS] == '-') {
-        char op = pSTR [*pPOS];
+        op [0] = pSTR [*pPOS];
         ++*pPOS;
         
-        char* val_s2 = GetT(Tree, pSTR, pPOS);
-        assert(val_s2);
-        val_d2 = strtod(val_s2, NULL);
+        cell_new2 = GetT(Tree, pSTR, pPOS);
+        assert(cell_new2);
         
-        if (op == '+')
-            val_d1 += val_d2;
-        else
-            val_d1 -= val_d2;
-        DtoS(val_s, val_d1);
+        
+        cell_new3 = CellNew (Tree);
+        cell_new3->data = op;
+        cell_new3->nextl = cell_new;
+        cell_new3->nextr = cell_new2;
+        cell_new3->nextl->prev = cell_new3;
+        cell_new3->nextr->prev = cell_new3;
+        
     }
     
     
-    return val_s;
+    return cell_new3;
 }
 
 
 
-char* GetT(Tree_t* Tree, const char* pSTR, int* pPOS) {
+Cell_t* GetT(Tree_t* Tree, const char* pSTR, int* pPOS) {
+    Cell_t* cell_new = GetP(Tree, pSTR, pPOS);
+    Cell_t* cell_new2 = NULL;
+    Cell_t* cell_new3 = cell_new;
+    char op [1] = "";
     
-    char* val_s = GetP(Tree, pSTR, pPOS);
-    assert(val_s);
-    
-    double val_d1 = strtod(val_s, NULL);
-    double val_d2;
+    assert(cell_new);
     
     while (pSTR [*pPOS] == '*' || pSTR [*pPOS] == '/') {
-        
-        char op = pSTR [*pPOS];
+        op [0] = pSTR [*pPOS];
         ++*pPOS;
         
-        char* val_s2 = GetP(Tree, pSTR, pPOS);
-        assert(val_s2);
-        val_d2 = strtod(val_s2, NULL);
+        cell_new2 = GetP(Tree, pSTR, pPOS);
+        assert(cell_new2);
         
-        if (op == '*')
-            val_d1 *= val_d2;
-        else
-            val_d1 /= val_d2;
         
-        DtoS(val_s, val_d1);
+        cell_new3 = CellNew (Tree);
+        cell_new3->data = op;
+        cell_new3->nextl = cell_new;
+        cell_new3->nextr = cell_new2;
+        cell_new3->nextl->prev = cell_new3;
+        cell_new3->nextr->prev = cell_new3;
+        
     }
     
     
-    return val_s;
+    return cell_new3;
 }
 
 
 
-char* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
+
+Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
     if (pSTR [*pPOS] =='(') {
         ++*pPOS;
         
-        char* val_s = GetE(Tree, pSTR, pPOS);
+        Cell_t* cell_new = GetE(Tree, pSTR, pPOS);
         
         assert(pSTR [*pPOS] == ')');
         ++*pPOS;
         
-        return val_s;
+        return cell_new;
     } else
         if ((('a' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'z')) || (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z'))) {
             
-            char* str_fun = GetF1(Tree, pSTR, pPOS);
+            Cell_t* cell_new = GetF1(Tree, pSTR, pPOS);
+            assert(cell_new);
+            
             assert(pSTR [*pPOS] == '(');
+            
+            //assert(0);
+            cell_new->nextl = GetP(Tree, pSTR, pPOS);
+            
+            assert(cell_new->nextl);
+            cell_new = cell_new->nextl->prev;
+            
             ++*pPOS;
             
-            char* val_s = GetE(Tree, pSTR, pPOS);
-            assert(pSTR [*pPOS] == ')');
+            //val_s = GetF2(Tree, pSTR, pPOS, str_fun, val_s);
             
-            ++*pPOS;
-            
-            val_s = GetF2(Tree, pSTR, pPOS, str_fun, val_s);
-            
-            delete str_fun;
-            
-            return val_s;
+            return cell_new;
         } else
             return GetN(Tree, pSTR, pPOS);
     return NULL;
@@ -169,7 +176,7 @@ char* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
 
 
 
-char* GetN (Tree_t* Tree, const char* pSTR, int* pPOS) {
+Cell_t* GetN (Tree_t* Tree, const char* pSTR, int* pPOS) {
     char* val_s = new char [CELL_SIZE_DATA];
     char str [CELL_SIZE_DATA] = "";
     int i = 0;
@@ -195,14 +202,17 @@ char* GetN (Tree_t* Tree, const char* pSTR, int* pPOS) {
         
     }
     str [i] = '\0';
-    
     memcpy(val_s, str, strlen(str));
-    return val_s;
+    
+    Cell_t* cell_new = CellNew(Tree);
+    cell_new->data = val_s;
+    
+    return cell_new;
 }
 
 
 
-char* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS) {
+Cell_t* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS) {
     
     char* val_s = new char [CELL_SIZE_DATA];
     char str [CELL_SIZE_DATA] = "";
@@ -223,7 +233,11 @@ char* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS) {
     str [i] = '\0';
     
     memcpy(val_s, str, strlen(str));
-    return val_s;
+    
+    Cell_t* cell_new = CellNew(Tree);
+    cell_new->data = val_s;
+    
+    return cell_new;
 }
 
 
