@@ -39,6 +39,8 @@ Cell_t* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS);//ОПРЕДЕЛИТЬ 
 
 char* GetF2(Tree_t* Tree, const char* pSTR, int* pPOS, char* str_fun, char* val_s);//ДОП ФУНКЦИИ
 
+Cell_t* Creat_Cell (Tree_t* Tree, Cell_t* cell1, Cell_t* cell2, Cell_t* cell3, char* str);
+
 int DtoS (char* str, double var);
 
 
@@ -99,12 +101,7 @@ Cell_t* GetE (Tree_t* Tree, const char* pSTR, int* pPOS) {
         assert(cell_new2);
         
         
-        cell_new3 = CellNew (Tree);
-        cell_new3->data = op;
-        cell_new3->nextl = cell_new;
-        cell_new3->nextr = cell_new2;
-        cell_new3->nextl->prev = cell_new3;
-        cell_new3->nextr->prev = cell_new3;
+        cell_new3 = Creat_Cell (Tree, cell_new, cell_new2, cell_new3, op);
         
     }
     return cell_new3;
@@ -129,12 +126,7 @@ Cell_t* GetT(Tree_t* Tree, const char* pSTR, int* pPOS) {
         assert(cell_new2);
         
         
-        cell_new3 = CellNew (Tree);
-        cell_new3->data = op;
-        cell_new3->nextl = cell_new;
-        cell_new3->nextr = cell_new2;
-        cell_new3->nextl->prev = cell_new3;
-        cell_new3->nextr->prev = cell_new3;
+        cell_new3 = Creat_Cell (Tree, cell_new, cell_new2, cell_new3, op);
         
     }
     
@@ -160,12 +152,7 @@ Cell_t* GetS (Tree_t* Tree, const char* pSTR, int* pPOS) {
         assert(cell_new2);
         
         
-        cell_new3 = CellNew (Tree);
-        cell_new3->data = op;
-        cell_new3->nextl = cell_new;
-        cell_new3->nextr = cell_new2;
-        cell_new3->nextl->prev = cell_new3;
-        cell_new3->nextr->prev = cell_new3;
+        cell_new3 = Creat_Cell (Tree, cell_new, cell_new2, cell_new3, op);
         
     }
     
@@ -310,6 +297,22 @@ char* GetF2(Tree_t* Tree, const char* pSTR, int* pPOS, char* str_fun, char* val_
     }
     
     return val_s;
+}
+
+
+
+Cell_t* Creat_Cell (Tree_t* Tree, Cell_t* cell1, Cell_t* cell2, Cell_t* cell3, char* str) {
+    assert(Tree);
+    assert(str);
+    
+    cell3 = CellNew (Tree);
+    cell3->data = str;
+    cell3->nextl = cell1;
+    cell3->nextr = cell2;
+    cell3->nextl->prev = cell3;
+    cell3->nextr->prev = cell3;
+    
+    return cell3;
 }
 
 
