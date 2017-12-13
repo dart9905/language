@@ -23,6 +23,7 @@ typedef char* TYPE_TREE;
 
 #include "../resources/tree.h"
 #include "../resources/read.h"
+#include "../resources/write.h"
 
 
 
