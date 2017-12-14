@@ -21,13 +21,14 @@
 
 
 #define DIV_DEF \
+    if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
+        fprintf(file,"PUSH %s\n", cell->nextr->data);\
+    }\
+\
     if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
-        fprintf(file,"PUSH %s\n", cell->nextr->data);\
-    }\
     fprintf(file, "DIV\n");
 
 
@@ -44,7 +45,7 @@
 
 #define EQU_DEF \
     if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
-        fprintf(file,"POP %s\n", cell->nextl->data);\
+        fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
     if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\

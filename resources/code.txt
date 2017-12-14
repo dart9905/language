@@ -1,12 +1,10 @@
+PUSH 6
+POP [1]
 PUSH [1]
 PUSH [1]
 MUL
-PUSH 1
-DIV
-POP [1]
-POP -1
 POP [2]
+PUSH 2
 PUSH [2]
-PUSH [1]
-SUB
+DIV
 POP [3]
