@@ -1,1 +1,3 @@
-while (x>2*7-8) x= 2
+Ax = 1/(ax * ax);
+VovaLOL = -1;
+b =VovaLOL-ax

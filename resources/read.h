@@ -32,8 +32,7 @@ int Space (const char* pSTR, int* pPOS);
 
 Cell_t* GetG0 (Tree_t* Tree, const char* pSTR) {
     
-    int POS;
-    POS = 0;
+    int POS = 0;
     //pSTR = "";
     
     Cell_t* cell_new = GetOR(Tree, pSTR, &POS);
@@ -250,7 +249,7 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
         Space (pSTR, pPOS);
         assert(pSTR [*pPOS] == ')');
         ++*pPOS;
-        
+        Space (pSTR, pPOS);
         return cell_new;
         
         
@@ -365,7 +364,7 @@ Cell_t* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS) {
            && (pSTR [*pPOS] != '(')) {
         
         if (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z')) {
-            str [i] = pSTR [*pPOS] + ('A' - 'a');
+            str [i] = pSTR [*pPOS] - ('A' - 'a');
         } else
             str [i] = pSTR [*pPOS];
         

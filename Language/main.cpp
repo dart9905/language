@@ -20,20 +20,23 @@ const char* CODE_FILES1 = "../resources/code.txt";
 
 const long int LI = 1000000000;
 typedef char* TYPE_TREE;
+typedef char* TYPE_LIST;
 
 #include "../resources/tree.h"
 #include "../resources/read.h"
 #include "../resources/write.h"
-
+#include "../resources/List.h"
 
 
 
 
 int DtoS (char* str, double var);
 
-int CreateCode (Tree_t* Tree, Cell_t* cell);
+int OpVal (Tree_t* Tree, Cell_t* cell);
 
-Cell_t* CreateCodeRec (Tree_t* Tree, Cell_t* cell);
+Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list);
+
+
 
 
 
@@ -52,6 +55,10 @@ int main() {
     
     TreePrintFile(Tree, Tree->position_first_cell);
     
+    OpVal (Tree, Tree->position_first_cell);
+    
+    CreatASS (Tree, Tree->position_first_cell, CODE_FILES1);
+    
     TreeDestructor(Tree);
     
     return 0;
@@ -59,18 +66,62 @@ int main() {
 
 
 
-int CreateCode (Tree_t* Tree, Cell_t* cell) {
-    TreeGoRound(Tree, cell, CreateCodeRec, FROM_BELOW);
+int OpVal (Tree_t* Tree, Cell_t* cell) {
+    assert(Tree);
+    assert(cell);
+    char str [] = "";
+    
+    List_t* list = ListConstruct(str);
+    
+    ValRet (Tree, cell, list);
+    
+    ListDestructor (list);
     return 0;
 }
 
 
 
-Cell_t* CreateCodeRec (Tree_t* Tree, Cell_t* cell) {
+Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list) {
     
+    assert(Tree);
+    
+    if (cell->nextl != NULL) {
+        cell = ValRet (Tree, cell->nextl, list);
+    }
+    
+    if (cell->nextr != NULL) {
+        cell = ValRet (Tree, cell->nextr, list);
+    }
+    if ((cell->nextr == NULL) && (cell->nextl == NULL) && ('a' <= cell->data [0]) && (cell->data [0] <= 'z')){
+        List_Cell_t* lcell = PositionCellValS (list, cell->data);
+        int num = 0;
+        
+        if (lcell) {
+            num = lcell->number;
+        } else {
+            char* str = new char {};
+            memcpy(str, cell->data, strlen(cell->data));
+            ListAddBefore (list, list->position_first_cell, str);
+            num = list->position_first_cell->next->number;
+        }
+        
+        char str [CELL_SIZE_DATA] = "";
+        str [0] = '[';
+        int len = 1;
+        
+        while (num / (10 * len) > 0) {++len;}
+        for (int i = 1; i < len + 1; ++i) {
+            str [i] = '0' + num / (len - i + 1);
+            num = num - num / (len - i + 1);
+        }
+        
+        str [len + 1] = ']';
+        str [len + 2] = '\0';
+        memcpy(cell->data, str, len + 3);
+        
+    }
     return cell->prev;
 }
-
 
 
 
@@ -140,6 +191,6 @@ int DtoS (char* str, double var) {
     }
     str [i] = '\0';
     
-    return 0;
+    return i;
     
 }

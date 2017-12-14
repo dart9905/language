@@ -4,7 +4,7 @@
  \brief Cell list
  */
 struct List_Cell_t  {
-    TYPE_LIST data = 0;   ///<value element cell
+    TYPE_LIST data;   ///<value element cell
     List_Cell_t* next;    ///<pointer on previous element cell, if his on that it is empty
     List_Cell_t* prev;    ///<pointer on next element cell, if his on that it is empty
     int number;           ///<cell number from the list
@@ -101,6 +101,9 @@ int printlist (List_t* List) {
     }
     return 0;
 }
+
+
+List_Cell_t* PositionCellValS (List_t* List, char* str);
 
 
 int error_prog (int number);
@@ -275,6 +278,21 @@ List_Cell_t* PositionCell (List_t* List, int cell_number) {
     
     for (int i = 0; i < List->size; ++i) {
         if ((List->cell)->number == cell_number) {
+            return List->cell;
+        }
+        List->cell = (List->cell)->next;
+    }
+    return NULL;
+}
+
+
+
+List_Cell_t* PositionCellValS (List_t* List, char* str) {
+    assert(List);
+    List->cell = List->position_first_cell;
+    
+    for (int i = 0; i < List->size; ++i) {
+        if ((strcmp(List->cell->data, str) == 0)) {
             return List->cell;
         }
         List->cell = (List->cell)->next;
