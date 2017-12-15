@@ -1,10 +1,13 @@
-_f name (x) {
-x = 0
+name (x ; y) {
+x = 2;
+Y = y + x;
+q = y - 1;
+ret q
 };
 
 BEGIN {
 read x;
 print x;
-name (x);
+name (x ; y);
 print x
 }

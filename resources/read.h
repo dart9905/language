@@ -28,6 +28,8 @@ Cell_t* GetBE (Tree_t* Tree, const char* pSTR, int* pPOS);
 
 Cell_t* GetRP (Tree_t* Tree, const char* pSTR, int* pPOS);
 
+Cell_t* GetFU (Tree_t* Tree, const char* pSTR, int* pPOS);
+
 Cell_t* Creat_Cell (Tree_t* Tree, Cell_t* cell1, Cell_t* cell2, Cell_t* cell3, char* str);
 
 
@@ -60,7 +62,7 @@ Cell_t* GetOR (Tree_t* Tree, const char* pSTR, int* pPOS) {
     
     assert(cell_new);
     
-    if ((pSTR [*pPOS] == ';')) {
+    if (pSTR [*pPOS] == ';') {
         op [0] = pSTR [*pPOS];
         op [1] = '\0';
         ++*pPOS;
@@ -74,6 +76,35 @@ Cell_t* GetOR (Tree_t* Tree, const char* pSTR, int* pPOS) {
     }
     return cell_new3;
     
+}
+
+
+Cell_t* GetFU (Tree_t* Tree, const char* pSTR, int* pPOS) {
+    Space (pSTR, pPOS);
+    Cell_t* cell_new3 = GetF1(Tree, pSTR, pPOS);
+    Space (pSTR, pPOS);
+    
+    
+    if (pSTR [*pPOS] == '(') {
+        ++*pPOS;
+        Cell_t* cell_new2 = GetOR(Tree, pSTR, pPOS);
+        Space (pSTR, pPOS);
+        assert(pSTR [*pPOS] == ')');
+        ++*pPOS;
+        Space (pSTR, pPOS);
+        cell_new3->nextl = cell_new2;
+        cell_new3->nextl->prev = cell_new3;
+    }
+    
+    if (pSTR [*pPOS] == '{') {
+        Cell_t* cell_new = GetSK(Tree, pSTR, pPOS);
+        Space (pSTR, pPOS);
+        
+        cell_new3->nextr = cell_new;
+        cell_new3->nextr->prev = cell_new3;
+    }
+    
+    return cell_new3;
 }
 
 
@@ -288,10 +319,13 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
                 if (((pSTR [*pPOS] == 'i') && (pSTR [*pPOS+1] == 'f')) || ((pSTR [*pPOS] == 'w') && (pSTR [*pPOS+1] == 'h'))) {
                     return GetIF(Tree, pSTR, pPOS);
                 } else
-                    if (((pSTR [*pPOS] == 'r') && (pSTR [*pPOS+1] == 'e') && (pSTR [*pPOS+2] == 'a')) || ((pSTR [*pPOS] == 'p') && (pSTR [*pPOS+1] == 'r') && (pSTR [*pPOS+2] == 'i'))) {
+                    if (((pSTR [*pPOS] == 'r') && (pSTR [*pPOS+1] == 'e') && (pSTR [*pPOS+2] == 'a')) ||
+                        ((pSTR [*pPOS] == 'p') && (pSTR [*pPOS+1] == 'r') && (pSTR [*pPOS+2] == 'i')) ||
+                        ((pSTR [*pPOS] == 'r') && (pSTR [*pPOS+1] == 'e') && (pSTR [*pPOS+2] == 't'))) {
                         return GetRP(Tree, pSTR, pPOS);
-                    } else
+                    } else  {
                         return GetSTRF(Tree, pSTR, pPOS);
+                    }
                 
                 
             } else {
@@ -309,6 +343,8 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
 
 Cell_t* GetSTRF (Tree_t* Tree, const char* pSTR, int* pPOS) {
     
+    
+    Space (pSTR, pPOS);
     Cell_t* cell_new = GetF1(Tree, pSTR, pPOS);
     Space (pSTR, pPOS);
     assert(cell_new);
@@ -317,7 +353,7 @@ Cell_t* GetSTRF (Tree_t* Tree, const char* pSTR, int* pPOS) {
         
         ++*pPOS;
         
-        cell_new->nextl = GetE(Tree, pSTR, pPOS);
+        cell_new->nextl = GetOR(Tree, pSTR, pPOS);
         Space (pSTR, pPOS);
         
         if (pSTR [*pPOS] == ',') {
@@ -329,10 +365,20 @@ Cell_t* GetSTRF (Tree_t* Tree, const char* pSTR, int* pPOS) {
         
         assert(pSTR [*pPOS] == ')');
         ++*pPOS;
-        
         assert(cell_new->nextl);
-        
         cell_new->nextl->prev = cell_new;
+        Space (pSTR, pPOS);
+        
+        
+        
+        
+        if (pSTR [*pPOS] == '{') {
+            Cell_t* cell_new3 = GetSK(Tree, pSTR, pPOS);
+            Space (pSTR, pPOS);
+            
+            cell_new->nextr = cell_new3;
+            cell_new->nextr->prev = cell_new;
+        }
         
     }
     

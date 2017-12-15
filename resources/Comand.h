@@ -164,6 +164,19 @@ if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
 }\
 
 
+#define FUN_DEV \
+    if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
+        fprintf(file,"PUSH %s\n", cell->nextr->data);\
+    }\
+\
+    if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
+        fprintf(file,"PUSH %s\n", cell->nextl->data);\
+    }\
+\
+    stack->Push(stack, stack->number + 1);\
+    fprintf(file, "- %i\n", stack->Peek(stack) GOTO);
+
+
 
 
 
@@ -189,6 +202,7 @@ DEF_CMD( >=, MOREQU_DEF)
 
 
 
+#undef FUN_DEV
 #undef DEF_REA
 #undef DEF_PRI
 #undef DEF_END
