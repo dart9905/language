@@ -17,15 +17,19 @@
 const char* TREE_FILES = "../resources/save.txt";
 const char* TREE_FILES1 = "../resources/save1.txt";
 const char* CODE_FILES1 = "../resources/code.txt";
+const char* LOG_FILES_NAME = "../resources/logstack.txt";
 
 const long int LI = 1000000000;
 typedef char* TYPE_TREE;
 typedef char* TYPE_LIST;
+typedef int DATA_TYPE;
 
 #include "../resources/tree.h"
+#include "../resources/List.h"
+#include "../resources/Stack.h"
 #include "../resources/read.h"
 #include "../resources/write.h"
-#include "../resources/List.h"
+
 
 
 

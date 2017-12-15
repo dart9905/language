@@ -22,6 +22,8 @@ Cell_t* GetSIGN (Tree_t* Tree, const char* pSTR, int* pPOS);
 
 Cell_t* GetSTRF (Tree_t* Tree, const char* pSTR, int* pPOS);
 
+Cell_t* GetSK (Tree_t* Tree, const char* pSTR, int* pPOS);
+
 Cell_t* Creat_Cell (Tree_t* Tree, Cell_t* cell1, Cell_t* cell2, Cell_t* cell3, char* str);
 
 
@@ -47,7 +49,7 @@ Cell_t* GetG0 (Tree_t* Tree, const char* pSTR) {
 
 
 Cell_t* GetOR (Tree_t* Tree, const char* pSTR, int* pPOS) {
-    Cell_t* cell_new = GetEQ(Tree, pSTR, pPOS);
+    Cell_t* cell_new = GetSK(Tree, pSTR, pPOS);
     Cell_t* cell_new2 = NULL;
     Cell_t* cell_new3 = cell_new;
     char* op = new char [2];
@@ -72,6 +74,25 @@ Cell_t* GetOR (Tree_t* Tree, const char* pSTR, int* pPOS) {
 
 
 
+Cell_t* GetSK (Tree_t* Tree, const char* pSTR, int* pPOS) {
+    
+    Space (pSTR, pPOS);
+    if (pSTR [*pPOS] == '{') {
+        Space (pSTR, pPOS);
+        ++*pPOS;
+        Cell_t* cell_new = GetOR(Tree, pSTR, pPOS);
+        Space (pSTR, pPOS);
+        assert(pSTR [*pPOS] == '}');
+        ++*pPOS;
+        Space (pSTR, pPOS);
+        return cell_new;
+    }
+    return GetEQ(Tree, pSTR, pPOS);
+    
+}
+
+
+
 Cell_t* GetIF (Tree_t* Tree, const char* pSTR, int* pPOS) {
     char* op = new char [3];
     
@@ -83,7 +104,7 @@ Cell_t* GetIF (Tree_t* Tree, const char* pSTR, int* pPOS) {
     assert(cell_new);
     Cell_t* cell_new2 = NULL;
     
-    cell_new2 = GetOR(Tree, pSTR, pPOS);
+    cell_new2 = GetSK(Tree, pSTR, pPOS);
     assert(cell_new2);
     
     
@@ -120,7 +141,6 @@ Cell_t* GetSIGN (Tree_t* Tree, const char* pSTR, int* pPOS) {
             op [2] = '\0';
             ++*pPOS;
         }
-        printf("%s\n", op);
         cell_new2 = GetE(Tree, pSTR, pPOS);
         assert(pSTR [*pPOS] == ')');
         ++*pPOS;
@@ -243,7 +263,7 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
     Space (pSTR, pPOS);
     
     if (pSTR [*pPOS] =='(') {
-        
+        Space (pSTR, pPOS);
         ++*pPOS;
         Cell_t* cell_new = GetE(Tree, pSTR, pPOS);
         Space (pSTR, pPOS);
@@ -390,7 +410,7 @@ Cell_t* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS) {
 
 int Space (const char* pSTR, int* pPOS) {
     
-    while ((pSTR [*pPOS] == ' ') || (pSTR [*pPOS] == '\n')) {
+    while ((pSTR [*pPOS] == ' ') || (pSTR [*pPOS] == '\n') || (pSTR [*pPOS] == '\t') || (pSTR [*pPOS] == '\r')) {
         ++*pPOS;
     }
     
