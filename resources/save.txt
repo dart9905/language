@@ -1,5 +1,6 @@
-x = 1;
-b = 1;
+BEGIN {
+read x;
+read b;
 C = 0;
 while ( x < 5) {
 	x = x + 2;
@@ -10,3 +11,6 @@ while ( x < 5) {
 	};
 	c = c + b
 };
+C = C + 1;
+print c
+}

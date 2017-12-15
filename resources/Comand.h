@@ -144,11 +144,35 @@
     stack->Pop(stack);
 
 
+#define DEF_END fprintf(file,"END\n");
+
+
+#define DEF_BEG fprintf(file,"BEGIN\n");
+
+
+#define DEF_REA \
+if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
+    fprintf(file,"IN\n", cell->nextl->data);\
+    fprintf(file,"POP %s\n", cell->nextl->data);\
+}\
+
+
+#define DEF_PRI \
+if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
+    fprintf(file,"PUSH %s\n", cell->nextl->data);\
+    fprintf(file,"POP\n", cell->nextl->data);\
+}\
+
+
 
 
 
 DEF_CMD( while, DEF_WHI )
 DEF_CMD( if, DEF_IF )
+DEF_CMD( begin, DEF_BEG )
+DEF_CMD( end, DEF_END )
+DEF_CMD( read, DEF_REA )
+DEF_CMD( print, DEF_PRI )
 DEF_CMD( +, DEF_ADD )
 DEF_CMD( -, SUB_DEF )
 DEF_CMD( /, DIV_DEF )
@@ -166,6 +190,10 @@ DEF_CMD( , )
 
 
 
+#undef DEF_REA
+#undef DEF_PRI
+#undef DEF_END
+#undef DEF_BEG
 #undef GOTO
 #undef GOTO_WHILE
 #undef DEF_WHI

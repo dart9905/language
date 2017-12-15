@@ -24,6 +24,10 @@ Cell_t* GetSTRF (Tree_t* Tree, const char* pSTR, int* pPOS);
 
 Cell_t* GetSK (Tree_t* Tree, const char* pSTR, int* pPOS);
 
+Cell_t* GetBE (Tree_t* Tree, const char* pSTR, int* pPOS);
+
+Cell_t* GetRP (Tree_t* Tree, const char* pSTR, int* pPOS);
+
 Cell_t* Creat_Cell (Tree_t* Tree, Cell_t* cell1, Cell_t* cell2, Cell_t* cell3, char* str);
 
 
@@ -56,7 +60,7 @@ Cell_t* GetOR (Tree_t* Tree, const char* pSTR, int* pPOS) {
     
     assert(cell_new);
     
-    if (pSTR [*pPOS] == ';') {
+    if ((pSTR [*pPOS] == ';')){//} || pSTR [*pPOS] == ':') {
         op [0] = pSTR [*pPOS];
         op [1] = '\0';
         ++*pPOS;
@@ -262,31 +266,39 @@ Cell_t* GetS (Tree_t* Tree, const char* pSTR, int* pPOS) {
 Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
     Space (pSTR, pPOS);
     
-    if (pSTR [*pPOS] =='(') {
-        Space (pSTR, pPOS);
-        ++*pPOS;
-        Cell_t* cell_new = GetE(Tree, pSTR, pPOS);
-        Space (pSTR, pPOS);
-        assert(pSTR [*pPOS] == ')');
-        ++*pPOS;
-        Space (pSTR, pPOS);
-        return cell_new;
-        
+    if ((pSTR [*pPOS] =='B') && (pSTR [*pPOS + 1] =='E') && (pSTR [*pPOS + 2] =='G')) {
+        return GetBE (Tree, pSTR, pPOS);
         
     } else
-        if ((('a' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'z')) || (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z'))) {
-            
-            
-            if (((pSTR [*pPOS] == 'i') && (pSTR [*pPOS+1] == 'f')) || ((pSTR [*pPOS] == 'w') && (pSTR [*pPOS+1] == 'h'))) {
-                return GetIF(Tree, pSTR, pPOS);
-            } else
-                return GetSTRF(Tree, pSTR, pPOS);
-            
-            
-        } else {
-            return GetN(Tree, pSTR, pPOS);
+        if (pSTR [*pPOS] =='(') {
             Space (pSTR, pPOS);
-        }
+            ++*pPOS;
+            Cell_t* cell_new = GetE (Tree, pSTR, pPOS);
+            Space (pSTR, pPOS);
+            assert(pSTR [*pPOS] == ')');
+            ++*pPOS;
+            Space (pSTR, pPOS);
+            return cell_new;
+            
+            
+        } else
+            if ((('a' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'z')) || (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z'))) {
+                
+                
+                if (((pSTR [*pPOS] == 'i') && (pSTR [*pPOS+1] == 'f')) || ((pSTR [*pPOS] == 'w') && (pSTR [*pPOS+1] == 'h'))) {
+                    return GetIF(Tree, pSTR, pPOS);
+                } else
+                    if (((pSTR [*pPOS] == 'r') && (pSTR [*pPOS+1] == 'e') && (pSTR [*pPOS+2] == 'a')) || ((pSTR [*pPOS] == 'p') && (pSTR [*pPOS+1] == 'r') && (pSTR [*pPOS+2] == 'i'))) {
+                        return GetRP(Tree, pSTR, pPOS);
+                    } else
+                        return GetSTRF(Tree, pSTR, pPOS);
+                
+                
+            } else {
+                return GetN(Tree, pSTR, pPOS);
+                Space (pSTR, pPOS);
+            }
+        
     
     
     printf("NULL\n");
@@ -404,6 +416,45 @@ Cell_t* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS) {
     Space (pSTR, pPOS);
     
     return cell_new;
+}
+
+
+
+Cell_t* GetBE (Tree_t* Tree, const char* pSTR, int* pPOS) {
+    Space (pSTR, pPOS);
+    Cell_t* cell_new = GetF1(Tree, pSTR, pPOS);
+    Space (pSTR, pPOS);
+    Cell_t* cell_new2 = GetSK(Tree, pSTR, pPOS);
+    Space (pSTR, pPOS);
+    
+    //assert(pSTR [*pPOS] == 'E' && pSTR [*pPOS + 1] == 'N' && pSTR [*pPOS + 2] == 'D');
+    Cell_t* cell_new3 = CellNew(Tree);
+    cell_new3->data = "end";
+    
+    cell_new3->nextl = cell_new;
+    cell_new3->nextr = cell_new2;
+    cell_new3->nextl->prev = cell_new3;
+    cell_new3->nextr->prev = cell_new3;
+    
+    Space (pSTR, pPOS);
+    return cell_new3;
+}
+
+
+
+Cell_t* GetRP (Tree_t* Tree, const char* pSTR, int* pPOS) {
+    printf("yes\n");
+    Space (pSTR, pPOS);
+    Cell_t* cell_new3 = GetF1(Tree, pSTR, pPOS);
+    Space (pSTR, pPOS);
+    Cell_t* cell_new = GetF1(Tree, pSTR, pPOS);
+    Space (pSTR, pPOS);
+    
+    cell_new3->nextl = cell_new;
+    cell_new3->nextl->prev = cell_new3;
+    
+    Space (pSTR, pPOS);
+    return cell_new3;
 }
 
 
