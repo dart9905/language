@@ -60,7 +60,7 @@ Cell_t* GetOR (Tree_t* Tree, const char* pSTR, int* pPOS) {
     
     assert(cell_new);
     
-    if ((pSTR [*pPOS] == ';')){//} || pSTR [*pPOS] == ':') {
+    if ((pSTR [*pPOS] == ';')) {
         op [0] = pSTR [*pPOS];
         op [1] = '\0';
         ++*pPOS;
@@ -443,7 +443,6 @@ Cell_t* GetBE (Tree_t* Tree, const char* pSTR, int* pPOS) {
 
 
 Cell_t* GetRP (Tree_t* Tree, const char* pSTR, int* pPOS) {
-    printf("yes\n");
     Space (pSTR, pPOS);
     Cell_t* cell_new3 = GetF1(Tree, pSTR, pPOS);
     Space (pSTR, pPOS);

@@ -1,16 +1,10 @@
+_f name (x) {
+x = 0
+};
+
 BEGIN {
 read x;
-read b;
-C = 0;
-while ( x < 5) {
-	x = x + 2;
-	x = x - 1;
-	b = 1;
-	while (b < 5) {
-		b = b + 1
-	};
-	c = c + b
-};
-C = C + 1;
-print c
+print x;
+name (x);
+print x
 }
