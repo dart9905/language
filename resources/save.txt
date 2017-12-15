@@ -1,6 +1,12 @@
 x = 1;
+b = 1;
+C = 0;
 while ( x < 5) {
 	x = x + 2;
-	x = x - 1
+	x = x - 1;
+	b = 1;
+	while (b < 5) {
+		b = b + 1
+	};
+	c = c + b
 };
-C = x

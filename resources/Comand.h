@@ -65,7 +65,7 @@
     }\
 
 
-#define DEF_IF fprintf(file, "%i :\n", stack->Peek(stack) GOTO);
+#define DEF_IF fprintf(file, "%i :\n", stack->Pop (stack) GOTO);
 
 
 #define MOR_DEF \
@@ -78,7 +78,7 @@
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    stack->Push(stack, stack->Peek(stack) + 1);\
+    stack->Push(stack, stack->number + 1);\
     fprintf(file, "JBE %i\n", stack->Peek(stack) GOTO);
 
 
@@ -92,7 +92,7 @@
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    stack->Push(stack, stack->Peek(stack) + 1);\
+    stack->Push(stack, stack->number + 1);\
     fprintf(file, "JAE %i\n", stack->Peek(stack) GOTO);
 
 
@@ -106,7 +106,7 @@
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    stack->Push(stack, stack->Peek(stack) + 1);\
+    stack->Push(stack, stack->number + 1);\
     fprintf(file, "JNE %i\n", stack->Peek(stack) GOTO);
 
 
@@ -120,7 +120,7 @@
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    stack->Push(stack, stack->Peek(stack) + 1);\
+    stack->Push(stack, stack->number + 1);\
     fprintf(file, "JA %i\n", stack->Peek(stack) GOTO);
 
 
@@ -134,13 +134,14 @@
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    stack->Push(stack, stack->Peek(stack) + 1);\
+    stack->Push(stack, stack->number + 1);\
     fprintf(file, "JB %i\n", stack->Peek(stack) GOTO);
 
 
 #define DEF_WHI \
     fprintf(file, "CALL %i\n", stack->Peek(stack) - 1 GOTO);\
-    fprintf(file, "%i :\n", stack->Peek(stack) GOTO);
+    fprintf(file, "%i :\n", stack->Pop(stack) GOTO);\
+    stack->Pop(stack);
 
 
 

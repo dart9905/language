@@ -118,7 +118,7 @@ struct t_stack {
     
     int pointer_position = NULL;
     
-    
+    int number = 0;
     
     
     int (*Construct)(t_stack*, int) = stack_Construct;
@@ -524,6 +524,7 @@ int stack_Print_str (char str []) {
 int stack_Plus (struct t_stack *name_stack, DATA_TYPE element) {
     name_stack->data [name_stack->pointer_position + CANARY_POSITION] = element;
     ++name_stack->pointer_position;
+    ++name_stack->number;
     
     name_stack->BUG = name_stack->Canary_update (name_stack, S_Push);
     name_stack->Error_s(name_stack);
