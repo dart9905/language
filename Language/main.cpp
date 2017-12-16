@@ -40,6 +40,8 @@ int OpVal (Tree_t* Tree, Cell_t* cell);
 
 Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list);
 
+char* SINT (char* str, long int num);
+
 
 
 
@@ -53,6 +55,8 @@ int main() {
     long int number_of_char = 0;
     char* my_buffer = ReadFiles (TREE_FILES , &number_of_char);
     
+    my_buffer = SINT (my_buffer, number_of_char);
+    
     Tree->cell = GetG0(Tree, my_buffer);
     Tree->position_first_cell = Tree->cell;
     TreeDump(Tree, Tree->cell);
@@ -65,7 +69,39 @@ int main() {
     
     TreeDestructor(Tree);
     
+    delete [] my_buffer;
+    
     return 0;
+}
+
+
+
+char* SINT (char* str, long int num) {
+    
+    char str0 [] = "";
+    int j = 0;
+    
+    char* file_validation = new char [num + num / 3] {};
+    
+    
+#define DEF_CMD( name1, name2) \
+if (str[i] == name1 [0] ) {\
+strcat(file_validation, name2);\
+} else
+    
+    
+    for (int i = 0; i < num; ++i) {
+#include "../resources/emoji.h"
+        {
+            char str2 [2] = {str[i], '\0'};
+            strcat(file_validation, str2 );\
+        }
+    }
+    
+#undef DEF_CMD
+    
+
+    return file_validation;
 }
 
 
