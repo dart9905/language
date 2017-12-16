@@ -8,6 +8,7 @@ struct List_Cell_t  {
     List_Cell_t* next;    ///<pointer on previous element cell, if his on that it is empty
     List_Cell_t* prev;    ///<pointer on next element cell, if his on that it is empty
     int number;           ///<cell number from the list
+    int gotonumber;
 };
 
 

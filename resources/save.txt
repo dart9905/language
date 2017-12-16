@@ -1,13 +1,12 @@
-name (x ; y) {
-x = 2;
-Y = y + x;
-q = y - 1;
-ret q
+name () {
+xq = xq + yq
 };
 
 BEGIN {
 read x;
+read y;
 print x;
-name (x ; y);
+print y;
+name ();
 print x
 }

@@ -7,6 +7,7 @@
             stack->Push(stack, stack->Peek(stack) + 1);\
             fprintf(file, "%i :\n", stack->Peek(stack) GOTO);\
         }\
+    return 0;
 
 
 #define DEF_ADD \
@@ -17,7 +18,8 @@
     if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
         fprintf(file,"PUSH %s\n", cell->nextr->data);\
     }\
-    fprintf(file, "ADD\n");
+    fprintf(file, "ADD\n");\
+    return 0;
 
 
 #define SUB_DEF \
@@ -29,7 +31,8 @@
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    fprintf(file, "SUB\n");
+    fprintf(file, "SUB\n");\
+    return 0;
 
 
 #define DIV_DEF \
@@ -41,7 +44,8 @@
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
     }\
 \
-    fprintf(file, "DIV\n");
+    fprintf(file, "DIV\n");\
+    return 0;
 
 
 #define MUL_DEF \
@@ -52,7 +56,8 @@
     if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
         fprintf(file,"PUSH %s\n", cell->nextr->data);\
     }\
-    fprintf(file, "MUL\n");
+    fprintf(file, "MUL\n");\
+    return 0;
 
 
 #define EQU_DEF \
@@ -63,9 +68,12 @@
     if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
         fprintf(file,"POP %s\n", cell->nextr->data);\
     }\
+    return 0;
 
 
-#define DEF_IF fprintf(file, "%i :\n", stack->Pop (stack) GOTO);
+#define DEF_IF \
+    fprintf(file, "%i :\n", stack->Pop (stack) GOTO);\
+    return 0;
 
 
 #define MOR_DEF \
@@ -79,7 +87,8 @@
     }\
 \
     stack->Push(stack, stack->number + 1);\
-    fprintf(file, "JBE %i\n", stack->Peek(stack) GOTO);
+    fprintf(file, "JBE %i\n", stack->Peek(stack) GOTO);\
+    return 0;
 
 
 #define LES_DEF \
@@ -93,7 +102,8 @@
     }\
 \
     stack->Push(stack, stack->number + 1);\
-    fprintf(file, "JAE %i\n", stack->Peek(stack) GOTO);
+    fprintf(file, "JAE %i\n", stack->Peek(stack) GOTO);\
+    return 0;
 
 
 #define EQUEQU_DEF \
@@ -107,7 +117,8 @@
     }\
 \
     stack->Push(stack, stack->number + 1);\
-    fprintf(file, "JNE %i\n", stack->Peek(stack) GOTO);
+    fprintf(file, "JNE %i\n", stack->Peek(stack) GOTO);\
+    return 0;
 
 
 #define LESEQU_DEF \
@@ -121,7 +132,8 @@
     }\
 \
     stack->Push(stack, stack->number + 1);\
-    fprintf(file, "JA %i\n", stack->Peek(stack) GOTO);
+    fprintf(file, "JA %i\n", stack->Peek(stack) GOTO);\
+    return 0;
 
 
 #define MOREQU_DEF \
@@ -135,19 +147,25 @@
     }\
 \
     stack->Push(stack, stack->number + 1);\
-    fprintf(file, "JB %i\n", stack->Peek(stack) GOTO);
+    fprintf(file, "JB %i\n", stack->Peek(stack) GOTO);\
+    return 0;
 
 
 #define DEF_WHI \
     fprintf(file, "CALL %i\n", stack->Peek(stack) - 1 GOTO);\
     fprintf(file, "%i :\n", stack->Pop(stack) GOTO);\
-    stack->Pop(stack);
+    stack->Pop(stack);\
+    return 0;
 
 
-#define DEF_END fprintf(file,"END\n");
+#define DEF_END \
+    fprintf(file,"END\n");\
+    return 0;
 
 
-#define DEF_BEG fprintf(file,"BEGIN\n");
+#define DEF_BEG \
+    fprintf(file,"BEGIN\n");\
+    return 0;
 
 
 #define DEF_REA \
@@ -155,6 +173,7 @@ if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
     fprintf(file,"IN\n", cell->nextl->data);\
     fprintf(file,"POP %s\n", cell->nextl->data);\
 }\
+return 0;
 
 
 #define DEF_PRI \
@@ -162,19 +181,7 @@ if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
     fprintf(file,"PUSH %s\n", cell->nextl->data);\
     fprintf(file,"POP\n", cell->nextl->data);\
 }\
-
-
-#define FUN_DEV \
-    if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
-        fprintf(file,"PUSH %s\n", cell->nextr->data);\
-    }\
-\
-    if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
-        fprintf(file,"PUSH %s\n", cell->nextl->data);\
-    }\
-\
-    stack->Push(stack, stack->number + 1);\
-    fprintf(file, "- %i\n", stack->Peek(stack) GOTO);
+return 0;
 
 
 
@@ -196,13 +203,13 @@ DEF_CMD( <, LES_DEF)
 DEF_CMD( ==, EQUEQU_DEF)
 DEF_CMD( <=, LESEQU_DEF)
 DEF_CMD( >=, MOREQU_DEF)
+//DEF_CMD( ;, return 0;)
 
 
 
 
 
 
-#undef FUN_DEV
 #undef DEF_REA
 #undef DEF_PRI
 #undef DEF_END
