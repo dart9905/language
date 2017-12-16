@@ -104,10 +104,12 @@ Cell_t* CreatASSRetF (Cell_t* cell, FILE* file, int mark, int param) {
     }
     
     if ((cell->nextl == NULL) && (cell->nextr == NULL)) {
-        if (mark == POP_f)
-            fprintf(file,"POP %s\n", cell->data);
-        if (mark == PUSH_f)
-            fprintf(file,"PUSH %s\n", cell->data);
+        if (cell->data [0] != '\0') {
+            if (mark == POP_f)
+                fprintf(file,"POP %s\n", cell->data);
+            if (mark == PUSH_f)
+                fprintf(file,"PUSH %s\n", cell->data);
+        }
     }
     
     return cell->prev;
@@ -122,7 +124,7 @@ int CreatFunVall (Cell_t* cell, FILE* file, struct t_stack* stack, struct List_t
                 if (cell->prev->nextr != NULL) {
                     if (cell->prev->nextl == cell) {
                         
-                        stack->Push(stack, stack->Peek(stack) + 1);
+                        stack->Push(stack, stack->number + 1);\
                         fprintf(file, "%i :\n", stack->Peek(stack) + 100);
                         
                         ListAddBefore (list, list->position_first_cell, cell->prev->data);

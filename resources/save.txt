@@ -1,12 +1,15 @@
-name () {
-xq = xq + yq
+name (xw;) {
+xw = xw + yw
 };
 
 BEGIN {
 read x;
 read y;
 print x;
-print y;
-name ();
+I = 0;
+while (I < 5) {
+	i = I + 1;
+	name (x;)
+};
 print x
 }

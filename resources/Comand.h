@@ -7,7 +7,6 @@
             stack->Push(stack, stack->Peek(stack) + 1);\
             fprintf(file, "%i :\n", stack->Peek(stack) GOTO);\
         }\
-    return 0;
 
 
 #define DEF_ADD \

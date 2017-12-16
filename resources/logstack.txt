@@ -21664,3 +21664,5545 @@ name_stack->data[11] = 666
 
 ===========================
 
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251163
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251163
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251163
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251639
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251646
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251646
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 251646
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251643
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251641
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251641
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251639
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251639
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 243
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251639
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251639
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 243
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251639
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251639
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 251642
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 243
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 251640
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 254519
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 254519
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 254522
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 254522
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 254522
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 254520
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 243
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 254520
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 254520
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 233159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 233171
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 233171
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 233171
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233167
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233164
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233164
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 232439
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232442
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232442
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232442
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 233159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 233159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233163
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 233161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 233161
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 232439
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232442
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232442
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232442
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 233159
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233162
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233166
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 233171
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 233171
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 233171
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 233167
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233164
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 233164
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 201
+
+the last operation on the stack Construct
+
+name_stack->last_operation = 1
+
+name_stack->canary_sum_data = 1332
+
+name_stack->canary_sum_stack = 232679
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 0
+
+name_stack->data[0] = 666
+name_stack->data[1] = 0
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232682
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232682
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232682
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232682
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 232686
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 232686
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 531
+
+the last operation on the stack Push
+
+name_stack->last_operation = 2
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 232691
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 232691
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 263
+
+the last operation on the stack Peek
+
+name_stack->last_operation = 4
+
+name_stack->canary_sum_data = 1338
+
+name_stack->canary_sum_stack = 232691
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 3
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 3
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1335
+
+name_stack->canary_sum_stack = 232687
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 2
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 2
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+
+stack intact
+
+CANARY_TEST_OK
+
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 252
+
+the last operation on the stack Pop
+
+name_stack->last_operation = 3
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232684
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
+==========t_stack==========
+
+nover of the calling string 539
+
+the last operation on the stack Destructor
+
+name_stack->last_operation = 6
+
+name_stack->canary_sum_data = 1333
+
+name_stack->canary_sum_stack = 232684
+
+name_stack->stack_size = 10
+
+name_stack->pointer_position = 1
+
+name_stack->data[0] = 666
+name_stack->data[1] = 1
+name_stack->data[2] = 0
+name_stack->data[3] = 0
+name_stack->data[4] = 0
+name_stack->data[5] = 0
+name_stack->data[6] = 0
+name_stack->data[7] = 0
+name_stack->data[8] = 0
+name_stack->data[9] = 0
+name_stack->data[10] = 0
+name_stack->data[11] = 666
+
+===========================
+
