@@ -42,6 +42,8 @@ Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list);
 
 char* SINT (char* str, long int num);
 
+bool Emoji (char* str1, char* str2);
+
 
 
 
@@ -54,8 +56,9 @@ int main() {
     
     long int number_of_char = 0;
     char* my_buffer = ReadFiles (TREE_FILES , &number_of_char);
-    
     my_buffer = SINT (my_buffer, number_of_char);
+    
+    assert(0);
     
     Tree->cell = GetG0(Tree, my_buffer);
     Tree->position_first_cell = Tree->cell;
@@ -81,27 +84,39 @@ char* SINT (char* str, long int num) {
     char str0 [] = "";
     int j = 0;
     
-    char* file_validation = new char [num + num / 3] {};
+    char* file_validation = new char [num] {};
     
     
 #define DEF_CMD( name1, name2) \
-if (str[i] == name1 [0] ) {\
+if (Emoji (&(str [i]), name1)) {\
 strcat(file_validation, name2);\
+i += strlen(name1) - 1;\
 } else
     
     
     for (int i = 0; i < num; ++i) {
-#include "../resources/emoji.h"
-        {
-            char str2 [2] = {str[i], '\0'};
-            strcat(file_validation, str2 );\
-        }
+        #include "../resources/emoji.h"
+            {
+                char str2 [2] = {str[i], '\0'};
+                strcat(file_validation, str2 );\
+            }
     }
     
 #undef DEF_CMD
     
-
+    delete [] str;
     return file_validation;
+}
+
+
+
+bool Emoji (char* str1, char* str2) {
+    for (int i = 0; i < strlen(str2); ++i) {
+        if (*(str1 + i) != *(str2 + i)) {
+            return false;
+        }
+    }
+    return true;
 }
 
 
