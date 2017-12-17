@@ -28,6 +28,10 @@ Cell_t* GetBE (Tree_t* Tree, const char* pSTR, int* pPOS);
 
 Cell_t* GetRP (Tree_t* Tree, const char* pSTR, int* pPOS);
 
+Cell_t* GetEmojiStr (Tree_t* Tree, const char* pSTR, int* pPOS);
+
+Cell_t* GetEmoji(Tree_t* Tree, const char* pSTR, int* pPOS);
+
 Cell_t* Creat_Cell (Tree_t* Tree, Cell_t* cell1, Cell_t* cell2, Cell_t* cell3, char* str);
 
 
@@ -45,6 +49,7 @@ Cell_t* GetG0 (Tree_t* Tree, const char* pSTR) {
     
     assert(cell_new);
     //assert(0);
+    printf("!%c! \n%s\n", pSTR[POS], &(pSTR[POS]));
     assert(pSTR[POS] == '\0');
     
     return cell_new;
@@ -86,6 +91,7 @@ Cell_t* GetSK (Tree_t* Tree, const char* pSTR, int* pPOS) {
         ++*pPOS;
         Cell_t* cell_new = GetOR(Tree, pSTR, pPOS);
         Space (pSTR, pPOS);
+        
         assert(pSTR [*pPOS] == '}');
         ++*pPOS;
         Space (pSTR, pPOS);
@@ -266,10 +272,10 @@ Cell_t* GetS (Tree_t* Tree, const char* pSTR, int* pPOS) {
 Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
     Space (pSTR, pPOS);
     
-    if ((pSTR [*pPOS] =='B') && (pSTR [*pPOS + 1] =='E') && (pSTR [*pPOS + 2] =='G')) {
+    if ((pSTR [*pPOS] =='b') && (pSTR [*pPOS + 1] =='e') && (pSTR [*pPOS + 2] =='g')) {
         return GetBE (Tree, pSTR, pPOS);
         
-    } else
+    } else {
         if (pSTR [*pPOS] =='(') {
             Space (pSTR, pPOS);
             ++*pPOS;
@@ -281,13 +287,13 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
             return cell_new;
             
             
-        } else
+        } else {
             if ((('a' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'z')) || (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z'))) {
                 
                 
                 if (((pSTR [*pPOS] == 'i') && (pSTR [*pPOS+1] == 'f')) || ((pSTR [*pPOS] == 'w') && (pSTR [*pPOS+1] == 'h'))) {
                     return GetIF(Tree, pSTR, pPOS);
-                } else
+                } else {
                     if (((pSTR [*pPOS] == 'r') && (pSTR [*pPOS+1] == 'e') && (pSTR [*pPOS+2] == 'a')) ||
                         ((pSTR [*pPOS] == 'p') && (pSTR [*pPOS+1] == 'r') && (pSTR [*pPOS+2] == 'i')) ||
                         ((pSTR [*pPOS] == 'r') && (pSTR [*pPOS+1] == 'e') && (pSTR [*pPOS+2] == 't'))) {
@@ -295,12 +301,18 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
                     } else  {
                         return GetSTRF(Tree, pSTR, pPOS);
                     }
-                
-                
-            } else {
-                return GetN(Tree, pSTR, pPOS);
-                Space (pSTR, pPOS);
+                }
+                } else {
+                    
+                    if ((('0' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= '9')) || (pSTR [*pPOS] == '+') || (pSTR [*pPOS] == '-')) {
+                        return GetN(Tree, pSTR, pPOS);
+                    } else {
+                        return GetEmojiStr(Tree, pSTR, pPOS);
+                    }
+                    
+                }
             }
+        }
         
     
     
@@ -464,7 +476,7 @@ Cell_t* GetRP (Tree_t* Tree, const char* pSTR, int* pPOS) {
     Space (pSTR, pPOS);
     Cell_t* cell_new3 = GetF1(Tree, pSTR, pPOS);
     Space (pSTR, pPOS);
-    Cell_t* cell_new = GetF1(Tree, pSTR, pPOS);
+    Cell_t* cell_new = GetP(Tree, pSTR, pPOS);
     Space (pSTR, pPOS);
     
     cell_new3->nextl = cell_new;
@@ -483,6 +495,81 @@ int Space (const char* pSTR, int* pPOS) {
     }
     
     return 0;
+}
+
+
+
+Cell_t* GetEmojiStr (Tree_t* Tree, const char* pSTR, int* pPOS) {
+    Space (pSTR, pPOS);
+    Cell_t* cell_new = GetEmoji (Tree, pSTR, pPOS);
+    Space (pSTR, pPOS);
+    assert(cell_new);
+    
+    if (pSTR [*pPOS] == '(') {
+        
+        ++*pPOS;
+        
+        cell_new->nextl = GetOR(Tree, pSTR, pPOS);
+        Space (pSTR, pPOS);
+        
+        if (pSTR [*pPOS] == ',') {
+            ++*pPOS;
+            cell_new->nextr = GetE(Tree, pSTR, pPOS);
+            Space (pSTR, pPOS);
+            cell_new->nextr->prev = cell_new;
+        }
+        
+        assert(pSTR [*pPOS] == ')');
+        ++*pPOS;
+        assert(cell_new->nextl);
+        cell_new->nextl->prev = cell_new;
+        Space (pSTR, pPOS);
+        
+        
+        
+        
+        if (pSTR [*pPOS] == '{') {
+            cell_new->data;
+            Cell_t* cell_new3 = GetSK(Tree, pSTR, pPOS);
+            Space (pSTR, pPOS);
+            
+            cell_new->nextr = cell_new3;
+            cell_new->nextr->prev = cell_new;
+        }
+        
+    }
+    
+    
+    return cell_new;
+}
+
+
+
+Cell_t* GetEmoji (Tree_t* Tree, const char* pSTR, int* pPOS) {
+    
+    
+    Space (pSTR, pPOS);
+    char* val_s = new char [CELL_SIZE_DATA];
+    char str [CELL_SIZE_DATA] = "";
+    str [0] = 'e';
+    int i = 1;
+    
+    while ((pSTR [*pPOS] != ' ') && (pSTR [*pPOS] != '\n') && (pSTR [*pPOS] != '\0') && (pSTR [*pPOS] != '\r')
+            && (pSTR [*pPOS] != '\t')) {
+        str [i] = pSTR [*pPOS];
+        ++*pPOS;
+        ++i;
+    }
+    
+    str [i] = '\0';
+    memcpy(val_s, str, strlen(str));
+    
+    Cell_t* cell_new = CellNew(Tree);
+    cell_new->data = val_s;
+    
+    Space (pSTR, pPOS);
+    
+    return cell_new;
 }
 
 

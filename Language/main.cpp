@@ -38,7 +38,7 @@ int DtoS (char* str, double var);
 
 int OpVal (Tree_t* Tree, Cell_t* cell);
 
-Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list);
+Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list1, List_t* list2);
 
 char* SINT (char* str, long int num);
 
@@ -58,7 +58,7 @@ int main() {
     char* my_buffer = ReadFiles (TREE_FILES , &number_of_char);
     my_buffer = SINT (my_buffer, number_of_char);
     
-    assert(0);
+    printf("%s\n======\n", my_buffer);
     
     Tree->cell = GetG0(Tree, my_buffer);
     Tree->position_first_cell = Tree->cell;
@@ -126,56 +126,66 @@ int OpVal (Tree_t* Tree, Cell_t* cell) {
     assert(cell);
     char str [] = "";
     
-    List_t* list = ListConstruct(str);
+    List_t* list1 = ListConstruct(str);
+    List_t* list2 = ListConstruct(str);
     
-    ValRet (Tree, cell, list);
+    ValRet (Tree, cell, list1, list2);
     
-    ListDestructor (list);
+    ListDestructor (list1);
+    ListDestructor (list2);
+    
     return 0;
 }
 
 
 
-Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list) {
+Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list1, List_t* list2) {
     
     assert(Tree);
     
     if (cell->nextl != NULL) {
-        cell = ValRet (Tree, cell->nextl, list);
+        cell = ValRet (Tree, cell->nextl, list1, list2);
     }
     
     if (cell->nextr != NULL) {
-        cell = ValRet (Tree, cell->nextr, list);
+        cell = ValRet (Tree, cell->nextr, list1, list2);
     }
-    if (strcmp(cell->data, "begin") != 0)
-        if ((cell->nextr == NULL) && (cell->nextl == NULL) && ('a' <= cell->data [0]) && (cell->data [0] <= 'z')){
-            List_Cell_t* lcell = PositionCellValS (list, cell->data);
-            int num = 0;
-            
-            if (lcell) {
-                num = lcell->number;
-            } else {
-                char* str = new char {};
-                memcpy(str, cell->data, strlen(cell->data));
-                ListAddBefore (list, list->position_first_cell, str);
-                num = list->position_first_cell->next->number;
+    if ((strcmp(cell->data, "begin") != 0) || (strcmp(cell->data, "print") != 0) ||
+        (strcmp(cell->data, "read") != 0) || (strcmp(cell->data, "if") != 0) ||
+        (strcmp(cell->data, "while") != 0)) {
+        
+        if ((cell->nextr == NULL) && (cell->nextl == NULL)) {
+            if (('a' <= cell->data [0]) && (cell->data [0] <= 'z')) {
+                List_Cell_t* lcell = PositionCellValS (list1, cell->data);
+                int num = 0;
+                
+                if (lcell) {
+                    num = lcell->number;
+                } else {
+                    char* str = new char {};
+                    memcpy(str, cell->data, strlen(cell->data));
+                    ListAddBefore (list1, list1->position_first_cell, str);
+                    num = list1->position_first_cell->next->number;
+                }
+                
+                char str [CELL_SIZE_DATA] = "";
+                str [0] = '[';
+                int len = 1;
+                
+                while (num / (10 * len) > 0) {++len;}
+                for (int i = 1; i < len + 1; ++i) {
+                    str [i] = '0' + num / (len - i + 1);
+                    num = num - num / (len - i + 1);
+                }
+                
+                str [len + 1] = ']';
+                str [len + 2] = '\0';
+                memcpy(cell->data, str, len + 3);
+                
             }
-            
-            char str [CELL_SIZE_DATA] = "";
-            str [0] = '[';
-            int len = 1;
-            
-            while (num / (10 * len) > 0) {++len;}
-            for (int i = 1; i < len + 1; ++i) {
-                str [i] = '0' + num / (len - i + 1);
-                num = num - num / (len - i + 1);
-            }
-            
-            str [len + 1] = ']';
-            str [len + 2] = '\0';
-            memcpy(cell->data, str, len + 3);
             
         }
+    }
     return cell->prev;
 }
 
