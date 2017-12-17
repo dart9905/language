@@ -407,19 +407,21 @@ Cell_t* GetF1(Tree_t* Tree, const char* pSTR, int* pPOS) {
     char* val_s = new char [CELL_SIZE_DATA];
     char str [CELL_SIZE_DATA] = "";
     int i = 0;
-    
-    while (((('a' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'z')) || (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z')))
-           && (pSTR [*pPOS] != '(')) {
+    if (((('a' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'z')) || (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z')))
+        && (pSTR [*pPOS] != '(')) {
         
-        if (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z')) {
-            str [i] = pSTR [*pPOS] - ('A' - 'a');
-        } else
-            str [i] = pSTR [*pPOS];
-        
-        ++i;
-        ++*pPOS;
+        while ((('0' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= '9')) || ((('a' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'z')) || (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z')))
+               && (pSTR [*pPOS] != '(')) {
+            
+            if (('A' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= 'Z')) {
+                str [i] = pSTR [*pPOS] - ('A' - 'a');
+            } else
+                str [i] = pSTR [*pPOS];
+            
+            ++i;
+            ++*pPOS;
+        }
     }
-    
     
     
     str [i] = '\0';
