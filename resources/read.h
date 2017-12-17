@@ -49,7 +49,6 @@ Cell_t* GetG0 (Tree_t* Tree, const char* pSTR) {
     
     assert(cell_new);
     //assert(0);
-    printf("!%c! \n%s\n", pSTR[POS], &(pSTR[POS]));
     assert(pSTR[POS] == '\0');
     
     return cell_new;
