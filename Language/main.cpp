@@ -58,15 +58,16 @@ int main() {
     char* my_buffer = ReadFiles (TREE_FILES , &number_of_char);
     my_buffer = SINT (my_buffer, number_of_char);
     
-    printf("%s\n======\n", my_buffer);
-    
     Tree->cell = GetG0(Tree, my_buffer);
     Tree->position_first_cell = Tree->cell;
-    TreeDump(Tree, Tree->cell);
+    
+    //TreeDump(Tree, Tree->cell);
     
     TreePrintFile(Tree, Tree->position_first_cell);
     
     OpVal (Tree, Tree->position_first_cell);
+    
+    //TreeDump(Tree, Tree->cell);
     
     CreatASS (Tree, Tree->position_first_cell, CODE_FILES1);
     
@@ -150,8 +151,8 @@ Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list1, List_t* list2) {
     if (cell->nextr != NULL) {
         cell = ValRet (Tree, cell->nextr, list1, list2);
     }
-    if ((strcmp(cell->data, "begin") != 0) || (strcmp(cell->data, "print") != 0) ||
-        (strcmp(cell->data, "read") != 0) || (strcmp(cell->data, "if") != 0) ||
+    if ((strcmp(cell->data, "begin") != 0) && (strcmp(cell->data, "print") != 0) &&
+        (strcmp(cell->data, "read") != 0) && (strcmp(cell->data, "if") != 0) &&
         (strcmp(cell->data, "while") != 0)) {
         
         if ((cell->nextr == NULL) && (cell->nextl == NULL)) {
@@ -183,7 +184,6 @@ Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list1, List_t* list2) {
                 memcpy(cell->data, str, len + 3);
                 
             }
-            
         }
     }
     return cell->prev;

@@ -307,9 +307,12 @@ Cell_t* GetP (Tree_t* Tree, const char* pSTR, int* pPOS) {
                     if ((('0' <= pSTR [*pPOS]) && (pSTR [*pPOS] <= '9')) || (pSTR [*pPOS] == '+') || (pSTR [*pPOS] == '-')) {
                         return GetN(Tree, pSTR, pPOS);
                     } else {
-                        return GetEmojiStr(Tree, pSTR, pPOS);
+                        if ((pSTR [*pPOS] != ')' && pSTR [*pPOS] != '}')) {
+                            return GetEmojiStr(Tree, pSTR, pPOS);
+                        } else {
+                            return GetN(Tree, pSTR, pPOS);
+                        }
                     }
-                    
                 }
             }
         }

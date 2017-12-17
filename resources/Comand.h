@@ -186,9 +186,10 @@ return 0;
 
 
 
+
+DEF_CMD( begin, DEF_BEG )
 DEF_CMD( while, DEF_WHI )
 DEF_CMD( if, DEF_IF )
-DEF_CMD( begin, DEF_BEG )
 DEF_CMD( end, DEF_END )
 DEF_CMD( read, DEF_REA )
 DEF_CMD( print, DEF_PRI )

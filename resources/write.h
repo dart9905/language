@@ -20,19 +20,22 @@ enum CreatFUN2 {
 if (strcmp(cell->data, #functionT) == 0) \
 { \
 declaration_cmd\
-}
+} else
 
 int SWITCH_ADD (Cell_t* cell, struct t_stack* stack, struct List_t* list, FILE* file) {
     
+    
+    
     #include "../resources/Comand.h"
-    
-    CreatFunVall (cell, file, stack, list);
-    
-    if(('a' <= cell->data [0]) && (cell->data [0] <= 'z') && (cell->nextr != NULL) && (cell->nextl != NULL)) {
+    {
+        CreatFunVall (cell, file, stack, list);
         
-        if (cell->nextl->data [0] != '\0')
-            CreatASSRetF (cell->nextl, file, PUSH_f, LEFT_f);
-        fprintf(file,"RET\n\n");
+        if(('a' <= cell->data [0]) && (cell->data [0] <= 'z') && (cell->nextr != NULL) && (cell->nextl != NULL)) {
+            
+            if (cell->nextl->data [0] != '\0')
+                CreatASSRetF (cell->nextl, file, PUSH_f, LEFT_f);
+            fprintf(file,"RET\n\n");
+        }
     }
     
     return 0;
