@@ -142,7 +142,7 @@ Cell_t* GetSIGN (Tree_t* Tree, const char* pSTR, int* pPOS) {
     
     assert(cell_new);
     
-    if ((pSTR [*pPOS] == '>') || (pSTR [*pPOS] == '<') || ((pSTR [*pPOS] == '=') && (pSTR [*pPOS+1] == '='))) {
+    if ((pSTR [*pPOS] == '!') || (pSTR [*pPOS] == '>') || (pSTR [*pPOS] == '<') || ((pSTR [*pPOS] == '=') && (pSTR [*pPOS+1] == '='))) {
         op [0] = pSTR [*pPOS];
         op [1] = '\0';
         ++*pPOS;

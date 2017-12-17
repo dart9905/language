@@ -44,6 +44,8 @@ char* SINT (char* str, long int num);
 
 bool Emoji (char* str1, char* str2);
 
+int Ten (int pos);
+
 
 
 
@@ -58,10 +60,12 @@ int main() {
     char* my_buffer = ReadFiles (TREE_FILES , &number_of_char);
     my_buffer = SINT (my_buffer, number_of_char);
     
+    //printf("%s\n\n", my_buffer);
+    
     Tree->cell = GetG0(Tree, my_buffer);
     Tree->position_first_cell = Tree->cell;
     
-    //TreeDump(Tree, Tree->cell);
+    TreeDump(Tree, Tree->cell);
     
     TreePrintFile(Tree, Tree->position_first_cell);
     
@@ -175,8 +179,8 @@ Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list1, List_t* list2) {
                 
                 while (num / (10 * len) > 0) {++len;}
                 for (int i = 1; i < len + 1; ++i) {
-                    str [i] = '0' + num / (len - i + 1);
-                    num = num - num / (len - i + 1);
+                    str [i] = '0' + num / (Ten (len - i + 1));
+                    num = num - (num / (Ten (len - i + 1)) * (Ten (len - i + 1)));
                 }
                 
                 str [len + 1] = ']';
@@ -187,6 +191,15 @@ Cell_t* ValRet (Tree_t* Tree, Cell_t* cell, List_t* list1, List_t* list2) {
         }
     }
     return cell->prev;
+}
+
+
+
+int Ten (int pos) {
+    int val = 1;
+    for (int i = 1; i < pos; ++i)
+        val *= 10;
+    return val;
 }
 
 

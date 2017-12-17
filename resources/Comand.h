@@ -22,12 +22,12 @@
 
 
 #define SUB_DEF \
-    if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
-        fprintf(file,"PUSH %s\n", cell->nextr->data);\
-    }\
-\
     if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
         fprintf(file,"PUSH %s\n", cell->nextl->data);\
+    }\
+\
+    if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
+        fprintf(file,"PUSH %s\n", cell->nextr->data);\
     }\
 \
     fprintf(file, "SUB\n");\
@@ -120,6 +120,21 @@
     return 0;
 
 
+#define NOEQU_DEF \
+    GOTO_WHILE\
+    if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
+        fprintf(file,"PUSH %s\n", cell->nextr->data);\
+    }\
+\
+    if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
+        fprintf(file,"PUSH %s\n", cell->nextl->data);\
+    }\
+\
+    stack->Push(stack, stack->number + 1);\
+    fprintf(file, "JE %i\n", stack->Peek(stack) GOTO);\
+    return 0;
+
+
 #define LESEQU_DEF \
     GOTO_WHILE\
     if ((cell->nextr->nextl == NULL) && (cell->nextr->nextr == NULL)) {\
@@ -183,6 +198,15 @@ if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
 return 0;
 
 
+#define DEF_SQR \
+    if ((cell->nextl->nextl == NULL) && (cell->nextl->nextr == NULL)) {\
+        fprintf(file,"PUSH %s\n", cell->nextl->data);\
+    }\
+\
+    fprintf(file, "SQRT\n");\
+    return 0;
+
+
 
 
 
@@ -193,6 +217,7 @@ DEF_CMD( if, DEF_IF )
 DEF_CMD( end, DEF_END )
 DEF_CMD( read, DEF_REA )
 DEF_CMD( print, DEF_PRI )
+DEF_CMD( sqrt, DEF_SQR )
 DEF_CMD( +, DEF_ADD )
 DEF_CMD( -, SUB_DEF )
 DEF_CMD( /, DIV_DEF )
@@ -201,6 +226,7 @@ DEF_CMD( =, EQU_DEF )
 DEF_CMD( >, MOR_DEF)
 DEF_CMD( <, LES_DEF)
 DEF_CMD( ==, EQUEQU_DEF)
+DEF_CMD( !=, NOEQU_DEF)
 DEF_CMD( <=, LESEQU_DEF)
 DEF_CMD( >=, MOREQU_DEF)
 //DEF_CMD( ;, return 0;)
@@ -210,6 +236,7 @@ DEF_CMD( >=, MOREQU_DEF)
 
 
 
+#undef DEF_SQR
 #undef DEF_REA
 #undef DEF_PRI
 #undef DEF_END
