@@ -53,7 +53,7 @@ int main() {
 Cell_t* EmojiCode  (Tree_t* Tree, Cell_t* cell, FILE* file) {
     assert(Tree);
     assert(cell);
-    char str [CELL_SIZE_DATA] = "";
+    //char str [CELL_SIZE_DATA] = "";
     if (strcmp(cell->data, "=") == 0) {
         Emoji  (cell->nextr);
         fprintf(file, "%s ", cell->nextr->data);
