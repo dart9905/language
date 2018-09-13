@@ -14,9 +14,9 @@
 
 
 
-const char* TREE_FILES = "../resources/save x!.txt";
-const char* TREE_FILES1 = "../resources/save1.txt";
-const char* CODE_FILES1 = "../resources/code.txt";
+const char* TREE_FILES = "../resources/filetoemoji_write.txt";//read
+const char* TREE_FILES1 = "../resources/savefiletotree.txt";
+const char* CODE_FILES1 = "../resources/savefiletocodeasm.txt";
 const char* LOG_FILES_NAME = "../resources/logstack.txt";
 
 const long int LI = 1000000000;

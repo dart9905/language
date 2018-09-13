@@ -1,11 +1,11 @@
 101 :
 POP [1]
 POP [2]
+PUSH [2]
 PUSH [1]
+MUL
 PUSH 1
 SUB
-PUSH [2]
-MUL
 POP [2]
 PUSH [1]
 PUSH 1

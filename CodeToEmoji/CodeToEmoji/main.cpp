@@ -34,9 +34,9 @@ int main() {
     char str [] = "";
     Tree_t* Tree = TreeConstruct(str);
     
-    TreeReadFiles("../../resources/savec.txt", Tree, Tree->position_first_cell, LEFT_cell);
+    TreeReadFiles("../../resources/filetoemoji_read.txt", Tree, Tree->position_first_cell, LEFT_cell);
     
-    FILE* file = fopen("../../resources/save.txt", "wt");
+    FILE* file = fopen("../../resources/filetoemoji_write.txt", "wt");
     EmojiCode  (Tree, Tree->position_first_cell->nextl, file);
     fclose(file);
     
