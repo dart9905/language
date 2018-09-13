@@ -1,0 +1,12 @@
+BEGIN
+
+
+PUSH 10
+PUSH 5
+
+DIV
+
+POP
+
+
+END

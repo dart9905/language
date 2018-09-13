@@ -1,0 +1,34 @@
+101 :
+
+DPOP
+MOV ax
+PUSH -1
+PUSH ax
+ADD
+PUSH 1
+JE 102  
+CALL 101
+MUL
+
+RET
+102 :
+DPOP
+DPOP
+RET
+
+BEGIN
+
+IN
+MOV ax
+PUSH ax
+
+CALL 101
+
+POP
+
+END
+
+
+
+
+

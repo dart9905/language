@@ -1,0 +1,112 @@
+BEGIN
+
+IN
+IN
+IN
+
+POP cx
+POP bx
+POP ax
+
+CALL 101
+
+END
+
+
+
+
+
+
+
+101 :
+
+PUSH 0
+PUSH ax
+
+JE 102
+
+PUSH 4
+PUSH ax
+PUSH cx
+MUL
+MUL
+PUSH bx
+PUSH bx
+MUL
+SUB
+PUSH 0
+
+JA 103
+JE 104
+DPOP
+
+SQRT
+POP dx
+PUSH dx
+POP
+PUSH dx
+
+
+PUSH 2
+PUSH ax
+MUL
+
+PUSH dx
+
+PUSH -1
+PUSH bx
+MUL
+
+SUB
+
+DIV
+POP
+
+
+
+PUSH 2
+PUSH ax
+MUL
+
+PUSH dx
+
+PUSH -1
+PUSH bx
+MUL
+
+ADD
+
+DIV
+POP
+
+RET
+
+
+102 :
+
+PUSH -1
+PUSH bx
+PUSH cx
+DIV
+DIV
+POP
+
+RET
+
+
+103 :
+RET
+
+
+104 :
+
+PUSH -1
+PUSH 2
+PUSH ax
+PUSH bx
+SUB
+SUB
+SUB
+POP
+
+RET
